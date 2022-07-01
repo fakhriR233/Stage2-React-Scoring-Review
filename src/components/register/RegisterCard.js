@@ -17,7 +17,7 @@ function RegisterCard() {
                       <Col>
 
                         <Form.Group className="mb-3" controlId="formGridName">
-                        <Form.Control type="name" placeholder="Enter name" />
+                        <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formGridEmail">
