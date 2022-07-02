@@ -6,11 +6,12 @@ import Header from "./components/Header";
 import ComplainScreen from "./screen/ComplainScreen";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyProfileScreen from "./screen/MyProfileScreen";
+import DetailProductScreen from "./screen/DetailProductScreen";
 
 function App() {
   return (
     <div className="Body">
-      <MyProfileScreen />
+      <DetailProductScreen />
     </div>
   );
 }
