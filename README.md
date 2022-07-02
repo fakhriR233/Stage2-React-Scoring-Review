@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # NO FUNCTION YET
 
-This Project only Renders Home, Without any Routes, Function, or even Data.
+Complain Render.
