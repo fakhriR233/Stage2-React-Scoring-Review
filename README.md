@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# STILL NO FUNCTION YET 
 
-# NO FUNCTION YET
+Oh No!
 
-Complain Render.
+Profile screen + product detail Render.
