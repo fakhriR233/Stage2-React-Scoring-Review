@@ -1,14 +1,15 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
+import Container from "react-bootstrap/esm/Container";
+import Card from "react-bootstrap/Card";
+import Row from "react-bootstrap/esm/Row";
+import Col from "react-bootstrap/esm/Col";
 import Image from "react-bootstrap/Image";
 import ChatPeople from "../../assets/images/Chat-People-1.jpg";
 
-const ComplainMain = () => {
+const ComplainSide = () => {
   return (
     <div>
+      <p style={{ color: "white" }}> LEFT SIDE</p>
       <div>
         <div style={{ display: "flex" }}>
           <div>
@@ -18,9 +19,9 @@ const ComplainMain = () => {
               roundedCircle
               style={{
                 objectFit: "cover",
-                marginRight: "40px",
-                height: "40px",
-                width: "45px",
+                marginRight: "20px",
+                width: "70px",
+                height: "75px",
               }}
             />
           </div>
@@ -30,28 +31,23 @@ const ComplainMain = () => {
               textOverflow: "ellipsis",
               whiteSpace: "nowrap",
               overflow: "hidden",
-              fontSize: "12px",
             }}
           >
             <p>Admin</p>
             <p>Hey Admin i need some help helppppppppppp</p>
           </div>
+
+          <div
+            className="ms-3"
+            style={{
+              borderLeft: "1px solid green",
+              height: "520px",
+            }}
+          />
         </div>
-      </div>
-      <div>
-        <Form.Control
-          type="text"
-          placeholder="Send Message"
-          style={{
-            position: "absolute",
-            bottom: "0",
-            marginBottom: "25px",
-            maxWidth: "550px",
-          }}
-        />
       </div>
     </div>
   );
 };
 
-export default ComplainMain;
+export default ComplainSide;
