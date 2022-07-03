@@ -7,11 +7,12 @@ import ComplainScreen from "./screen/ComplainScreen";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyProfileScreen from "./screen/MyProfileScreen";
 import DetailProductScreen from "./screen/DetailProductScreen";
+import ListProductScreen from "./screen/adminScreen/ListProductScreen";
 
 function App() {
   return (
     <div className="Body">
-      <DetailProductScreen />
+      <ListProductScreen />
     </div>
   );
 }
