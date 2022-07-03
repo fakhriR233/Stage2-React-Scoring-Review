@@ -8,11 +8,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MyProfileScreen from "./screen/MyProfileScreen";
 import DetailProductScreen from "./screen/DetailProductScreen";
 import ListCategoryScreen from "./screen/adminScreen/ListCategoryScreen";
+import ProductListScreen from "./screen/adminScreen/ProductListScreen";
+import EditCategoryScreen from "./screen/adminScreen/EditCategoryScreen";
 
 function App() {
   return (
     <div className="Body">
-      <ListCategoryScreen />
+      <EditCategoryScreen />
     </div>
   );
 }

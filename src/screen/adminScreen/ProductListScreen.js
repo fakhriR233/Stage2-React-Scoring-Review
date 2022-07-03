@@ -1,18 +1,18 @@
 import React from "react";
-import TableList from "../../components/adminCategoryProduct/TableCategoryProduct";
 import AdminHeader from "../../components/AdminHeader";
+import TableListProduct from "../../components/adminProductList/TableProductList";
 
-const ListCategoryScreen = () => {
+const ProductListScreen = () => {
   return (
     <div>
       <AdminHeader />
       <div>
         <div>
-          <TableList />
+          <TableListProduct />
         </div>
       </div>
     </div>
   );
 };
 
-export default ListCategoryScreen;
+export default ProductListScreen;

@@ -2,7 +2,7 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 
-const TableListProduct = () => {
+const TableCategoryProduct = () => {
   return (
     <div>
       <div className="p-5 mx-5 my-3">
@@ -44,4 +44,4 @@ const TableListProduct = () => {
   );
 };
 
-export default TableListProduct;
+export default TableCategoryProduct;
