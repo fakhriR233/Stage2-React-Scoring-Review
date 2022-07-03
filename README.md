@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
-# STILL NO FUNCTION YET 
+# STILL NO FUNCTION YET
 
-Oh No!
+Oh No! OH NO!
 
-Profile screen + product detail Render.
+Will do Function Tonight

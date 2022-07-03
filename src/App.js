@@ -16,7 +16,7 @@ import CompareProductScreen from "./screen/CompareProductScreen";
 function App() {
   return (
     <div className="Body">
-      <CompareProductScreen />
+      <LoginScreen />
     </div>
   );
 }
