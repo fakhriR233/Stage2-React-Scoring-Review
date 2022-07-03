@@ -1,8 +1,8 @@
 import React from "react";
-import TableList from "../../components/adminListProduct/TableListProduct";
+import TableList from "../../components/adminCategoryProduct/TableCategoryProduct";
 import Header from "../../components/Header";
 
-const ListProductScreen = () => {
+const ListCategoryScreen = () => {
   return (
     <div>
       <Header />
@@ -15,4 +15,4 @@ const ListProductScreen = () => {
   );
 };
 
-export default ListProductScreen;
+export default ListCategoryScreen;
