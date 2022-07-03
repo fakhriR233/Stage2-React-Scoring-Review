@@ -11,11 +11,12 @@ import ListCategoryScreen from "./screen/adminScreen/ListCategoryScreen";
 import ProductListScreen from "./screen/adminScreen/ProductListScreen";
 import EditCategoryScreen from "./screen/adminScreen/EditCategoryScreen";
 import EditProductScreen from "./screen/adminScreen/EditProductScreen";
+import CompareProductScreen from "./screen/CompareProductScreen";
 
 function App() {
   return (
     <div className="Body">
-      <EditProductScreen />
+      <CompareProductScreen />
     </div>
   );
 }
