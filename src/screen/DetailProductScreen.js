@@ -5,8 +5,16 @@ import Header from '../components/Header'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 import Col from 'react-bootstrap/esm/Col'
+import { useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 const DetailProductScreen = () => {
+
+    // const [data, setData] = useState()
+    const params = useParams()
+
+    const index = params.id
+
   return (
     <div>
         <Header/>
@@ -14,12 +22,12 @@ const DetailProductScreen = () => {
                 <Row className='justify-content-md-center'>
                     <Col xs lg="5">
                         <div>
-                            <DetailImage/>
+                            <DetailImage index={index}/>
                         </div>
                     </Col>
                     <Col xs lg="5">
                         <div style={{height: "555px"}}>
-                            <DetailDesc/>
+                            <DetailDesc index={index}/>
                         </div>
                     </Col>
                 </Row>

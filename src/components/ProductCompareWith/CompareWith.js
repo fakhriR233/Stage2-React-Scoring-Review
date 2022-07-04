@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/esm/Button";
+import { Link } from "react-router-dom";
 
 const CompareWith = () => {
   return (
@@ -24,9 +25,11 @@ const CompareWith = () => {
             <Button variant="danger" className="p-2 w-75">
               Buy This One Instead
             </Button>
-            <Button variant="warning" className="p-2 ms-2">
-              Compare to Other
-            </Button>
+            <Link to='/HomeScreen'>
+              <Button variant="warning" className="p-2 ms-2">
+                Compare to Other
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

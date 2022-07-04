@@ -3,8 +3,23 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function LoginCard() {
+function LoginCard({checkUser}) {
+  // const [email, setEmail] = useState(null);
+  // const isLogin = true;
+  // // const [pass, setPass] = useState('');
+  const navigate = useNavigate()
+
+  function whoIsUser() {
+    if (checkUser === "false") {
+      navigate('/HomeScreen')
+    } else {
+      navigate('/ListCategory')
+    }
+  }
+
   return (
     <Card style={styles.LoginCard}>
       <div>
@@ -23,7 +38,7 @@ function LoginCard() {
                         <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
                         <div>
-                          <Button variant="danger" type="submit" className='w-100 mt-4'>
+                          <Button onClick={whoIsUser} variant="danger" className='w-100 mt-4'>
                               Login
                           </Button>
                         </div>

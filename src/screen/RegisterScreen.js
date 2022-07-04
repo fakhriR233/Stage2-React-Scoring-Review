@@ -3,8 +3,11 @@ import LoginImage from "../components/login/LoginImage";
 import LoginButton from "../components/login/button/LoginButton";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import {useState} from "react";
 
-function Login() {
+function RegisterScreen(handleRegister) {
+  
+
     return (
       <div>
         <div style={styles.LoginScreen}>
@@ -29,4 +32,4 @@ function Login() {
     }
   }
 
-  export default Login;
+  export default RegisterScreen;

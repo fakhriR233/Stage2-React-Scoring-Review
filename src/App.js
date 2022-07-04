@@ -12,12 +12,39 @@ import ProductListScreen from "./screen/adminScreen/ProductListScreen";
 import EditCategoryScreen from "./screen/adminScreen/EditCategoryScreen";
 import EditProductScreen from "./screen/adminScreen/EditProductScreen";
 import CompareProductScreen from "./screen/CompareProductScreen";
+import { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
+  const [user, setUser] = useState("false")
+
   return (
-    <div className="Body">
-      <LoginScreen />
-    </div>
+    <Router>
+        <div className="Body">
+        <Routes>
+          <Route exact="/" path="/" element={<LoginScreen isAdmin={user}/>}/>
+          <Route path="/Register" element={<RegisterScreen handleRegister={user}/>}/>
+          <Route exact path="/ListCategory" element={<ListCategoryScreen/>}/>
+          <Route exact path="/ListProduct" element={<ProductListScreen/>}/>
+          <Route exact path="/EditCategory" element={<EditCategoryScreen/>}/>
+          <Route exact path="/EditProduct" element={<EditProductScreen/>}/>
+          <Route path="/HomeScreen" element={<HomeScreen />}/>
+          <Route path="/ProfileScreen" element={<MyProfileScreen />}/>
+          <Route path="/Complain" element={<ComplainScreen isAdmin={user}/>}/>
+          <Route path="/CompareProduct" element={<CompareProductScreen />}/>
+          <Route path="/DetailProduct/:id" element={<DetailProductScreen />}/>
+
+        </Routes>
+      </div>
+    </Router>
+
+ 
+      
+
   );
 }
 

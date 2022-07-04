@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/esm/Button";
+import { Link } from 'react-router-dom'
 
 const EditCategory = () => {
   return (
@@ -21,9 +22,11 @@ const EditCategory = () => {
           </Form.Select>
         </div>
         <div className="mt-5 pt-5">
-          <Button className="w-100" variant="success">
-            Save
-          </Button>
+          <Link to="/ListCategory">
+            <Button className="w-100" variant="success">
+              Save
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

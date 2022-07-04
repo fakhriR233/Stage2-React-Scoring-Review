@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/esm/Button'
 import { Link, useParams } from 'react-router-dom';
 import { home } from '../../dataDummy';
 
-const DetailDesc = () => {
+const DetailDescCompare = () => {
     const params = useParams()
 
     const indx = params.id
@@ -12,7 +12,7 @@ const DetailDesc = () => {
     <div>
         <div>
             <div>
-                <h2 style={Styles.RedText}> {home[indx].title}</h2>
+                <h2 style={Styles.RedText}> Amazing Mouse</h2>
             </div>
             <div>
                 <h5 style={Styles.RedText}> Stock: 600</h5>
@@ -33,7 +33,7 @@ const DetailDesc = () => {
             </div>
             <div style={Styles.Button}>
                 <div>
-                    <p style={Styles.RedText} className="text-end my-3">Rp. {home[indx].price}</p>
+                    <p style={Styles.RedText} className="text-end my-3">Rp. Much Price</p>
                 </div>
                 <div className='d-flex justify-content-md-end mt-auto'>
                     <Button variant="danger" className='p-2 w-100'>Buy</Button>
@@ -60,4 +60,4 @@ const Styles = {
     }
 }
 
-export default DetailDesc
+export default DetailDescCompare

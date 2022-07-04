@@ -13,11 +13,11 @@ const Header = () => {
                 <img src={Logo} alt="Dumbmerch Logo" style={Styles.LogoSize}/>
                 </Nav>
                 <Nav className='me-5'>
-                    <Nav.Link className="mx-3" href="#deets" >Complain</Nav.Link>
-                    <Nav.Link className="mx-3" eventKey={2} href="#memes">
+                    <Nav.Link className="mx-3" href="/Complain" >Complain</Nav.Link>
+                    <Nav.Link className="mx-3" eventKey={2} href="/ProfileScreen">
                     Profile
                     </Nav.Link>
-                    <Nav.Link className="mx-3" eventKey={3} href="#memes">
+                    <Nav.Link className="mx-3" eventKey={3} href="/">
                     Logout
                     </Nav.Link>
                 </Nav>

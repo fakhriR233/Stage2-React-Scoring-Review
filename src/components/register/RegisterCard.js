@@ -1,10 +1,23 @@
+import {useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-function RegisterCard() {
+function RegisterCard(setUserEmail) {
+  // const [first, setFirst] = useState(setUserEmail.handleRegister)
+
+  // console.log(setUserEmail);
+
+  // const inputHandler = (e) => {
+  //   setFirst(e.target.value)
+  // }
+
+  // console.log(setFirst);
+
   return (
     <Card style={styles.LoginCard}>
       <div>
@@ -17,20 +30,22 @@ function RegisterCard() {
                       <Col>
 
                         <Form.Group className="mb-3" controlId="formGridName">
-                        <Form.Control type="text" placeholder="Enter name" />
+                        <Form.Control type="text" placeholder="Enter name" name="name"/>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formGridEmail">
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control type="email" placeholder="Enter email"/>
                         </Form.Group>
                       
                         <Form.Group className="mb-3" controlId="formGridPassword">
                         <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
                         <div>
-                          <Button variant="danger" type="submit" className='w-100 mt-4'>
-                              Login
-                          </Button>
+                          <Link to="/">
+                            <Button variant="danger" className='w-100 mt-4'>
+                                Login
+                            </Button>
+                          </Link>
                         </div>
                       </Col>
                     </Card.Body>

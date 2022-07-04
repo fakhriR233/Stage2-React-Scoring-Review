@@ -3,8 +3,11 @@ import LoginImage from "../components/login/LoginImage";
 import LoginButton from "../components/login/button/LoginButton";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { useLocation,useNavigate } from 'react-router-dom'
+import { useEffect } from "react";
 
-function Login() {
+function Login(props) {
+
     return (
       <div>
         <div style={styles.LoginScreen}>
@@ -14,7 +17,7 @@ function Login() {
                   <LoginButton />
               </Col>
               <Col lg={4}>
-                  <LoginCard />
+                  <LoginCard checkUser={props.isAdmin}/>
               </Col>
           </Row>
         </div>

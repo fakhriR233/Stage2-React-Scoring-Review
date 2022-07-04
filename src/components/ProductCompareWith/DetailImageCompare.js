@@ -4,7 +4,7 @@ import ViperMini from "../../assets/images/viper-mini.jpg"
 import { home } from '../../dataDummy'
 import { useParams } from 'react-router-dom'
 
-const DetailImage = () => {
+const DetailImageCompare = () => {
   // console.log(home[0]);
 
   const params = useParams()
@@ -16,7 +16,7 @@ const DetailImage = () => {
   return (
     <div>
         <div>
-            <Image src={home[indx].img} style={ImgSize}/>
+            <Image src={ViperMini} style={ImgSize}/>
         </div>
     </div>
   )
@@ -28,4 +28,4 @@ const ImgSize = {
     objectFit: "cover"
 }
 
-export default DetailImage
+export default DetailImageCompare

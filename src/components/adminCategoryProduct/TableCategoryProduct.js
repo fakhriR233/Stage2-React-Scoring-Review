@@ -1,6 +1,7 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
+import { Link } from 'react-router-dom'
 
 const TableCategoryProduct = () => {
   return (
@@ -22,9 +23,11 @@ const TableCategoryProduct = () => {
               <td>1</td>
               <td>Mouse</td>
               <td>
-                <Button style={{ width: "150px" }} variant="success">
-                  Edit
-                </Button>
+                <Link to="/EditCategory">
+                  <Button style={{ width: "150px" }} variant="success">
+                    Edit
+                  </Button>
+                </Link>
               </td>
             </tr>
             <tr>
